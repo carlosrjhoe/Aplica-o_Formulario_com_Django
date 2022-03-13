@@ -1,11 +1,12 @@
 from datetime import datetime
+from pyexpat import model
 from django import forms
 from django.template import Origin
 from tempus_dominus.widgets import DatePicker
 from datetime import datetime
 from passagens.classe_viagem import tipos_de_classes
 from passagens.validation import *
-from passagens.models import Passagem, ClasseViagem, pessoa
+from passagens.models import Passagem, ClasseViagem, Pessoa
 
 class PassagensForms(forms.ModelForm):
     data_pesquisa = forms.DateField(label='Data da pesquisa', disabled=True, initial=datetime.today)
@@ -35,3 +36,9 @@ class PassagensForms(forms.ModelForm):
                 mensagem_erro = lista_de_erros[erro]
                 self.add_error(erro, mensagem_erro)
         return self.cleaned_data
+    
+class PessoaForms(forms.ModelForm):
+    class Meta:
+        model = Pessoa
+        exclude = ['nome']
+        
