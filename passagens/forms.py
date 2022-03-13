@@ -19,3 +19,10 @@ class PassagensForms(forms.Form):
     )
     email = forms.EmailField(label='Email', max_length=150)
     
+    def clean_origem(self):
+        origem = self.cleaned_data.get('origem',)
+        if any(char.isdigit() for char in origem):
+            raise forms.ValidationError('Origem invalidada: Não inclua números')
+        else:
+            return origem
+        
