@@ -22,7 +22,14 @@ class PassagensForms(forms.Form):
     def clean_origem(self):
         origem = self.cleaned_data.get('origem',)
         if any(char.isdigit() for char in origem):
-            raise forms.ValidationError('Origem invalidada: Não inclua números')
+            raise forms.ValidationError('Origem invalida: Não inclua números')
         else:
             return origem
+        
+    def clean_destino(self):
+        destino = self.cleaned_data.get('destino',)
+        if any(char.isdigit() for char in destino):
+            raise forms.ValidationError('destino invalida: Não inclua números')
+        else:
+            return destino
         
