@@ -4,7 +4,12 @@
     <h1>Passagens</h1>
     <form action="{% url 'minha_consulta' %}" method="post">
         {% csrf_token %}
-        {{ form }}
+        {% for field in form.visible_fields %}
+        <div class="form-goup">
+            <label for="{{field.id_for_label}}">{{field.label}}</label>
+            {{field}}
+        </div>
+        {%endfor%}
         <input type="submit" value="ok" class="btn btn-success">
     </form>
 </section>
