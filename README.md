@@ -31,3 +31,11 @@ Nesta aula:
 - Iniciei a aplicação criando o app de passagens;
 - Criei um formulário utilizando o Django forms;
 - Melhorei o visual do formulário exibindo incluindo o bootstrap.
+
+## Aula 05
+
+Nesta aula:
+
+- Iniciei a aplicação criando o app de passagens;
+- Criei um formulário utilizando o Django forms;
+- Melhorei o visual do formulário exibindo incluindo o bootstrap.
