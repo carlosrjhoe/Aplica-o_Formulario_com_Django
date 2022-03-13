@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-
-<h1>Passagens</h1>
-<form action="{% url 'minha_consulta' %}" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="ok" class="btn btn-success">
-</form>
+<section class="col-8" >
+    <h1>Passagens</h1>
+    <form action="{% url 'minha_consulta' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="ok" class="btn btn-success">
+    </form>
+</section>
 
 {% endblock %}
