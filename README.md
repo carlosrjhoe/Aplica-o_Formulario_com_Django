@@ -16,3 +16,10 @@ Nesta aula:
 - Aprendir como manipular as informações do Formulário, exibindo os dados em outra página;
 - Aprendi a evitar código duplicado nos arquivos HTML criando o arquivo base.html;
 - Alterei o visual do formulário adicionando widget e classes do bootestrap.
+
+## Aula 03
+
+Nesta aula:
+
+- Criei novos campos no formulário como data da pesquisa, informações extras e email;
+- Adicionei a classe form-controll nos campos sem duplicar o código, utilizando o widget tweaks.
