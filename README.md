@@ -23,3 +23,11 @@ Nesta aula:
 
 - Criei novos campos no formulário como data da pesquisa, informações extras e email;
 - Adicionei a classe form-controll nos campos sem duplicar o código, utilizando o widget tweaks.
+
+## Aula 04
+
+Nesta aula:
+
+- Iniciei a aplicação criando o app de passagens;
+- Criei um formulário utilizando o Django forms;
+- Melhorei o visual do formulário exibindo incluindo o bootstrap.
